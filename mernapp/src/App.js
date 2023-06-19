@@ -12,6 +12,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import Signup from './screens/Signup';
 import { CartProvider } from './components/ContextReducer';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import MyOrder from './screens/MyOrder';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/creatuser" element={<Signup />} />
+          <Route exact path="/myOrder" element={<MyOrder />} />
         </Routes>
       </div>
     </Router>
